@@ -14,76 +14,86 @@
     <div class="container">
       <div class="main-content">
         <div class="left-box">
-          <h3 id="title">The Imaginary Company</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            eveniet, dolor enim fugiat aperiam quisquam nihil sunt veniam unde
-            veritatis minus. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit.
-          </p>
+          <div class="left-box-content">
+            <div class="welcome-section">
+              <h1 class="company-title">Welcome Page</h1>
+              <p class="welcome-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                pharetra lacinia maximus. Integer pulvinar lacus.
+              </p>
+            </div>
 
-          <div class="divider">
-            <span class="divider-text">GET CONNECTED WITH</span>
-          </div>
-
-          <div class="social-handles">
-            <a href="#" class="social-btn"><i class="fab fa-google"></i></a>
-            <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <div class="social-section">
+              <h3>GET CONNECTED WITH</h3>
+              <div class="social-handles">
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="Google">🌐</a>
+                <a href="#" aria-label="Facebook">📘</a>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="right-box">
           <nav class="nav-bar">
-            <a href="#">Sign In</a>
-            <a href="#" class="active">Register</a>
+            <a href="#signin">Sign In</a>
+            <a href="#register">Register</a>
           </nav>
 
-          <h1>Register</h1>
+          <h2 class="form-title">Register</h2>
 
-          <form action="/register" method="POST">
-            <div class="form-item">
-              <label for="user-name">FULL NAME</label>
+          <form class="registration-form" novalidate>
+            <div class="form-group">
+              <label for="fullname" class="form-label">FULL NAME</label>
               <input
                 type="text"
-                placeholder="Enter your Name"
-                name="user-name"
-                id="user-name"
+                id="fullname"
+                name="fullname"
+                class="form-input"
+                placeholder="Enter Your Full Name"
                 required
               />
             </div>
 
-            <div class="form-item">
-              <label for="email">EMAIL</label>
+            <div class="form-group">
+              <label for="email" class="form-label">EMAIL</label>
               <input
                 type="email"
-                placeholder="Enter your Email"
-                name="email"
                 id="email"
+                name="email"
+                class="form-input"
+                placeholder="Enter Your Email"
                 required
               />
             </div>
 
-            <div class="form-item">
-              <label for="password">PASSWORD</label>
+            <div class="form-group">
+              <label for="password" class="form-label">Password</label>
               <input
                 type="password"
-                placeholder="Enter your Password"
-                name="password"
                 id="password"
+                name="password"
+                class="form-input"
+                placeholder="••••••••"
                 required
               />
             </div>
 
-            <div class="form-item checkbox-container">
-              <input type="checkbox" id="terms" name="terms" required />
-              <label for="terms" class="terms"
-                >I agree to the statements in the
-                <a href="#">Terms of service</a></label
-              >
+            <div class="checkbox-group">
+              <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                class="checkbox-input"
+                required
+              />
+              <label for="terms" class="checkbox-label">
+                I agree All the Statements in
+                <a href="#terms-of-service">Terms of service</a>
+              </label>
             </div>
 
-            <button type="submit">Sign Up</button>
+            <button type="submit" class="submit-btn">Sign Up</button>
           </form>
         </div>
       </div>
