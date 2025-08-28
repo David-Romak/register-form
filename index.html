@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register Form</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <div class="container">
@@ -14,23 +18,30 @@
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
             eveniet, dolor enim fugiat aperiam quisquam nihil sunt veniam unde
-            veritatis minus
+            veritatis minus. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.
           </p>
 
-          <h3>GET CONNECTED WITH</h3>
+          <div class="divider">
+            <span class="divider-text">GET CONNECTED WITH</span>
+          </div>
+
           <div class="social-handles">
-            <a href="">google</a>
-            <a href="">facebook</a>
-            <a href="">instagram</a>
+            <a href="#" class="social-btn"><i class="fab fa-google"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
+
         <div class="right-box">
           <nav class="nav-bar">
-            <a href="">Sign In</a>
-            <a href="">Register</a>
+            <a href="#">Sign In</a>
+            <a href="#" class="active">Register</a>
           </nav>
+
           <h1>Register</h1>
-          <form action="">
+
+          <form action="/register" method="POST">
             <div class="form-item">
               <label for="user-name">FULL NAME</label>
               <input
@@ -38,34 +49,41 @@
                 placeholder="Enter your Name"
                 name="user-name"
                 id="user-name"
+                required
               />
             </div>
+
             <div class="form-item">
-              <label for="user-name">EMAIL</label>
+              <label for="email">EMAIL</label>
               <input
-                type="text"
+                type="email"
                 placeholder="Enter your Email"
                 name="email"
                 id="email"
+                required
               />
             </div>
+
             <div class="form-item">
-              <label for="user-name">PASSWORD</label>
+              <label for="password">PASSWORD</label>
               <input
-                type="text"
+                type="password"
                 placeholder="Enter your Password"
                 name="password"
                 id="password"
+                required
               />
             </div>
-            <div class="form-item">
-              <input type="checkbox" />
-              <span
+
+            <div class="form-item checkbox-container">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms" class="terms"
                 >I agree to the statements in the
-                <a href="">Terms of service</a></span
+                <a href="#">Terms of service</a></label
               >
             </div>
-            <button>Sign Up</button>
+
+            <button type="submit">Sign Up</button>
           </form>
         </div>
       </div>
