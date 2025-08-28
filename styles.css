@@ -16,12 +16,14 @@
   display: flex;
 
   height: 90vh;
+  overflow: hidden;
 }
 
 .left-box,
 .right-box {
   flex: 1;
   height: 100%;
+  padding: 20px;
 }
 
 .left-box {
@@ -46,4 +48,59 @@
 
 .left-box .social-handles {
   margin-top: 30px;
+}
+
+nav {
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 80px;
+}
+
+.right-box {
+  background-color: white;
+}
+nav a {
+  padding: 20px;
+  margin-right: 0;
+  color: black;
+  text-decoration: none;
+  background-color: blue;
+  border-radius: 0 0 8px 8px;
+  transition: .2s ease;
+}
+
+nav a:hover{
+  background-color: #222;
+
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+form {
+}
+.form-item {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #222;
+  height: 30px;
+}
+
+input[type]radio {
+  color: blue;
+}
+
+button {
+  margin: 20px auto;
+  padding: 15px 8em;
+  background-color: rgb(22, 22, 230);
 }
